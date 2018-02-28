@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="Judge.css"/>
+	</head>
+	<body>
+		<div class="JMHeader">
+			<div class="JMLogo">
+				<a :to="{ name: 'home'}">
+					<img src="../photos/logo.png" alt="">
+				</a>
+			</div>
+			<div class="JMNoticeBoard">
+				<div class="JMNoticeBoardLeft">
+					<a href="#">报名参赛</a>
+				</div>
+				<div class="JMNoticeBoardRight">
+					<div class="JMItem">
+						<span class="countDown">100</span> 征稿截止剩余天数
+					</div>
+				</div>
+			</div>
+			<div class="JMTopNav">
+				<ul class="JMMenu">
+					<li class="JMItem">
+						<a class="JMLink" href="#">首页</a>
+					</li>
+					<li class="JMItem">
+						<a class="JMLink" href="#">新闻</a>
+					</li>
+					<li class="JMItem">
+						<a class="JMLink" href="#">章程</a>
+					</li>
+					<li class="JMItem">
+						<a class="JMLink JMActive" href="#">评委</a>
+					</li>
+				</ul>
+				<!--登陆-->
+				<ul class="JMUserMenu" v-cloak>
+					<li class="JMItem" v-show="test">
+						<a class="JMLink JM20C7BE" :to="{ name: 'works'}">[ gansiqiu ]</a>
+					</li>
+					<li class="JMItem" v-show="test">
+						<a class="JMLink" :to="{ name: 'logout'}">退出</a>
+					</li>
+					<li class="JMItem" v-show="!test">
+						<a class="JMLink JMIconUser" :to="{ name: 'logout'}"></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="JMJudge">
+			<ul class="JMList2" >
+				<li class="JMItem" v-for="item in items">
+					<a class="JMLink" href="#">
+						<img class="JMThumb" src="../photos/judge1.jpg">
+						<div class="JMInfo">
+	            			<h3 class="JMTitle">何人可</h3>
+							<p class="JMExcerpt">评委</p>
+						</div>
+					</a>
+	        		<hr class="JMJudgeLine">
+				</li>
+				<li class="JMItem" v-for="item in items">
+					<a class="JMLink" href="#">
+						<img class="JMThumb" src="../photos/judge1.jpg">
+						<div class="JMInfo">
+	            			<h3 class="JMTitle">何人可</h3>
+							<p class="JMExcerpt">评委</p>
+						</div>
+					</a>
+	        		<hr class="JMJudgeLine">
+				</li>
+				<li class="JMItem" v-for="item in items">
+					<a class="JMLink" href="#">
+						<img class="JMThumb" src="../photos/judge1.jpg">
+						<div class="JMInfo">
+	            			<h3 class="JMTitle">何人可</h3>
+							<p class="JMExcerpt">评委</p>
+						</div>
+					</a>
+	        		<hr class="JMJudgeLine">
+				</li>
+				<li class="JMItem" v-for="item in items">
+					<a class="JMLink" href="#">
+						<img class="JMThumb" src="../photos/judge1.jpg">
+						<div class="JMInfo">
+	            			<h3 class="JMTitle">何人可</h3>
+							<p class="JMExcerpt">评委</p>
+						</div>
+					</a>
+	        		<hr class="JMJudgeLine">
+				</li>
+				<li class="JMItem" v-for="item in items">
+					<a class="JMLink" href="#">
+						<img class="JMThumb" src="../photos/judge1.jpg">
+						<div class="JMInfo">
+	            			<h3 class="JMTitle">何人可</h3>
+							<p class="JMExcerpt">评委</p>
+						</div>
+					</a>
+	        		<hr class="JMJudgeLine">
+				</li>
+				<li class="JMItem" v-for="item in items">
+					<a class="JMLink" href="#">
+						<img class="JMThumb" src="../photos/judge1.jpg">
+						<div class="JMInfo">
+	            			<h3 class="JMTitle">何人可</h3>
+							<p class="JMExcerpt">评委</p>
+						</div>
+					</a>
+	        		<hr class="JMJudgeLine">
+				</li>
+				<li class="JMItem" v-for="item in items">
+					<a class="JMLink" href="#">
+						<img class="JMThumb" src="../photos/judge1.jpg">
+						<div class="JMInfo">
+	            			<h3 class="JMTitle">何人可</h3>
+							<p class="JMExcerpt">评委评委评委评委评委评委评委评委评委评委评委评委评委评委评委</p>
+						</div>
+					</a>
+	        		<hr class="JMJudgeLine">
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

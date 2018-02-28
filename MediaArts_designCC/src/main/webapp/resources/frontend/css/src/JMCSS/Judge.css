@@ -1,0 +1,81 @@
+body{
+    margin: 0px auto;
+    padding: 0px;
+    font-size: 14px;
+    font-family: "Arail","Microsoft YaHei","Heiti";
+    max-width: 1280px;
+    padding-top:160px;
+    display: flex;
+    min-height: 83vh;
+    flex-direction: column;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+li{
+    list-style: none;
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+}
+input:focus{
+    outline: none;
+}
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border: none;
+}
+
+
+
+/* 评委部分 */
+#JMJudge{
+  width: 90%;
+}
+#JMJudge hr{
+  width:80%;height:3px;background-color:#ECC95D;margin-top:10px;border:0px;
+}
+.JMList2{
+    font-size: 0px;
+    width: 100%;
+    margin: 60px 5% 60px 8%;
+}
+.JMList2 .JMItem{
+    width: 80%;
+    margin: 2.5%;
+    position: relative;
+}
+.JMList2 .JMItem .JMThumb{
+    width: 15%;
+    border: 2px solid #FFFFFF;
+    border-radius: 20px;
+}
+
+.JMList2 .JMItem .JMThumb:hover{
+    filter:sepia(1);
+}
+.JMList2 .JMItem .JMInfo{
+    position: absolute;
+    left:20%;
+    top:0px;
+    bottom:0px;
+    right: 0px;
+    overflow: hidden;
+}
+.JMList2 .JMItem .JMTitle{
+    font-size: 21px;
+    color: #EECE6C;
+    margin-top: 5px;
+}
+.JMList2 .JMItem .JMExcerpt{
+  width: 90%;
+    font-size: 16px;
+    font-weight: bold;
+    color: #656464;
+    margin: 0px;
+    line-height:30px;
+}

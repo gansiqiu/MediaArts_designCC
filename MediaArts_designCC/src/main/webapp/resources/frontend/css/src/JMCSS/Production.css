@@ -1,0 +1,110 @@
+body{
+    margin: 0px auto;
+    padding: 0px;
+    font-size: 14px;
+    font-family: "Arail","Microsoft YaHei","Heiti";
+    padding-top:160px;
+    display: flex;
+    min-height: 83vh;
+    flex-direction: column;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+li{
+    list-style: none;
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+}
+input:focus{
+    outline: none;
+}
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border: none;
+}
+
+
+
+/* 最近上传 最多关注	最多点赞 */
+.JMProducBtnDiv {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 30px;
+  max-width: 1280px;
+}
+.JMProducBtnDiv .JMProducBtnUl {
+  height:65px;line-height: 65px;font-size:20px;margin-left:55%;margin-top:10px;margin-bottom:10px;
+}
+.JMProducBtnDiv .JMProducBtnUl .JMProducBtn1,
+.JMProducBtnDiv .JMProducBtnUl .JMProducBtn2,
+.JMProducBtnDiv .JMProducBtnUl .JMProducBtn3{
+  margin-left:10px;
+}
+.JMProducBtnDiv .JMProducBtnUl .JMProducBtn1 a,
+.JMProducBtnDiv .JMProducBtnUl .JMProducBtn2 a,
+.JMProducBtnDiv .JMProducBtnUl .JMProducBtn3 a{
+  font-size: 20px;
+}
+.JMProducBtnDiv .JMProducBtnUl .JMProducBtn1 img{
+  width:60px;height:40px;position:relative;display:inline-block;margin-right:10px;margin-bottom:-10px;color:#5C5C5C;padding-left:10px;
+}
+.JMProducBtnDiv .JMProducBtnUl .JMProducBtn2 img,
+.JMProducBtnDiv .JMProducBtnUl .JMProducBtn3 img{
+  width:60px;height:40px;position:relative;display:inline-block;margin-right:10px;margin-bottom:-10px;color:#5C5C5C;border-left:4px solid #ECC95D;padding-left:10px;
+}
+
+/* 作品列表 */
+.JMProducListDiv{
+  margin:30px auto 40px;
+  max-width: 1280px;
+}
+/*
+  作品列表，多列时，注意下标更改
+ */
+.JMProducListDiv .JMProducListUl_1 .JMProducListUl1_1 div{
+  width:210px;height:400px;margin-left:110px;border-bottom: 3px solid #ECC95D;
+}
+.JMProducListDiv .JMProducListUl_1 .JMProducListUl1_2 div,
+.JMProducListDiv .JMProducListUl_1 .JMProducListUl1_3 div,
+.JMProducListDiv .JMProducListUl_1 .JMProducListUl1_4 div{
+  width:210px;height:400px;margin-left:55px;border-bottom: 3px solid #ECC95D;
+}
+.JMProducListDiv  img{
+  width: 210px;height: 300px;border: 1px solid #312745;
+}
+.JMProducListDiv .JMProducListUl_1 .JMProducListUl1li1_title{
+  color: #ECC95D;
+  font-size: 18px;
+  margin-left: 5px;
+}
+.JMProducListDiv .JMProducListUl_1 .JMProducListUl1li1_author{
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+ * footer
+ *
+ * */
+#JMFooter{
+  height: 80px;
+  background: #ECC95D;
+  color: #fff;
+  text-align: center;
+  line-height: 80px;
+}

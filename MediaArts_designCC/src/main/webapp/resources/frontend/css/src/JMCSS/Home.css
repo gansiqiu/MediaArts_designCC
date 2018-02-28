@@ -1,0 +1,270 @@
+body {
+	margin: 0px auto;
+	padding: 0px;
+	font-size: 14px;
+	font-family: "Arail", "Microsoft YaHei", "Heiti";
+	padding-top: 160px;
+	display: flex;
+	min-height: 83vh;
+	flex-direction: column;
+}
+
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+li {
+	list-style: none;
+	display: inline-block;
+}
+
+a {
+	text-decoration: none;
+}
+
+input:focus {
+	outline: none;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	display: block;
+	border: none;
+}
+
+
+
+
+
+
+/* 大图展示 */
+.JMHome {
+	margin: 0 auto;
+	max-width: 1280px;
+	overflow: hidden;
+	position: relative;
+}
+
+.JMHome #JMItem {
+	position: relative;
+}
+
+.JMHome #JMItem img {
+	width: 100%;
+	height: auto;
+}
+.JMHome #JMItem #JMInfo {
+	position: absolute;
+	width: 366px;
+	height: 80px;
+	top: 80px;
+	left: 50px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	transform: translateY(-50%);
+	background-color: #312745;
+	opacity: 0.9;
+}
+
+.JMHome #JMItem #JMInfo #JMTitle_1 {
+	color: #ECC95D;
+	font-size: 28px;
+	margin-left: 30px;
+}
+
+.JMHome #JMItem #JMInfo #JMTitle_2 {
+	color: #fff;
+	font-size: 28px;
+	margin-left: 120px;
+}
+
+.JMHome #JMItem .JMPhotosDiv {
+ width:44%;height:225px;background:#ECC95D;
+ position: relative;
+ top: -110px;
+ left: 100px;
+}
+
+/* 大赛目标 */
+
+.JMHome .JMdasaimubiao .JMDasaiBox1 .JMTitle {
+	color: #4A4A4A;
+	width: 40%;
+	margin-left: 55%;
+	text-align: left;
+}
+
+.JMHome .JMdasaimubiao .JMDasaiBox1 .JMDasaiBox1Content1,
+.JMHome .JMdasaimubiao .JMDasaiBox1 .JMDasaiBox1Content2,
+.JMHome .JMdasaimubiao .JMDasaiBox1 .JMDasaiBox1Content3 {
+	color: #635D4D;
+	width: 40%;
+	margin-left: 55%;
+	text-align: left;
+	text-indent: 2em;
+}
+/*
+ 	大赛目标的一个div
+ */
+
+#JMList {
+	font-size: 0px;
+	padding: 50px;
+}
+
+#JMList #JMItem {
+	width: 31%;
+	margin: 1.1%;
+}
+/*
+  长沙-媒体艺术之都
+ */
+.JMHome .JMPhotosDiv{
+  position:relative;top:-110px;left:100px;
+}
+/*
+  changsha Media Arts
+ */
+.JMHome .JMPhotosDiv .JMMediaPhotos{
+  width:100%;height:225px;background:#ECC95D;
+}
+/*
+  五张图片
+ */
+.JMHome .JMPhotosDiv .JMMediaPhotos .JMMediaPhotosBox{
+  width:100%;height:90px;
+}
+.JMHome .JMPhotosDiv .JMMediaPhotos .JMMediaPhotosBox1 .JMMediaPhotostitle{
+  width:31%;margin-left:15px;text-align:center
+}
+.JMHome .JMPhotosDiv .JMMediaPhotos .JMMediaPhotosBox1 .JMMediaPhotos_1,
+.JMHome .JMPhotosDiv .JMMediaPhotos .JMMediaPhotosBox1 .JMMediaPhotos_2,
+.JMHome .JMPhotosDiv .JMMediaPhotos .JMMediaPhotosBox2 .JMMediaPhotos_4,
+.JMHome .JMPhotosDiv .JMMediaPhotos .JMMediaPhotosBox2 .JMMediaPhotos_5{
+  width:30%;height:90px;background:yellow;margin-top:10px;margin-left:3px;
+}
+.JMHome .JMPhotosDiv .JMMediaPhotos .JMMediaPhotosBox2 .JMMediaPhotos_3{
+  width:32%;height:90px;background:yellow;margin-top:20px;margin-left:15px;
+}
+ /* 大赛目标 */
+ .JMHome .JMdasaimubiao{
+   margin-top:-65px;
+ }
+ /*   灰色背景  */
+.JMHome .JMdasaimubiao .JMgrayBG{
+  width:100%; height:130px;background:#4A4A4A;
+}
+.JMHome .JMdasaimubiao .JMDasaiBox1{
+  width:85%; height:265px;background:#ECC95D;margin:-80px auto 10px;padding-top:15px;
+}
+.JMHome .JMdasaimubiao .JMDasaiBox1 .JMTitle{
+  color: #4A4A4A;
+  width: 40%;
+  margin-left: 55%;
+  text-align: left;
+}
+.JMHome .JMdasaimubiao .JMDasaiBox1 .JMDasaiBox1Content1,
+.JMHome .JMdasaimubiao .JMDasaiBox1 .JMDasaiBox1Content2,
+.JMHome .JMdasaimubiao .JMDasaiBox1 .JMDasaiBox1Content3{
+  color: #635D4D;
+  width: 40%;
+  margin-left: 55%;
+  text-align: left;
+  text-indent:2em;
+}
+.JMHome .JMdasaimubiao .JMDasaiPhoto1{
+  width:500px; height:280px;
+	border: 2px solid white;
+	margin-left:9%;
+	margin-top:-320px;
+	background:url(../../../images/JMImages/logo.png);
+}
+/* 大赛目标第二个盒子 */
+.JMHome .JMdasaimubiao .JMDasaiBox2{
+  width:70%; height:285px;background:#ECC95D;margin-top:80px;margin-left:22.5%;
+}
+.JMHome .JMdasaimubiao .JMDasaiBox2 .JMDasaiBox2Div1 .JMDasaiBox2Div1_photo1{
+  width:135px;height:90px;position:relative;display:inline-block;margin-left:25%;margin-top:10px;
+}
+.JMHome .JMdasaimubiao .JMDasaiBox2 .JMDasaiBox2Div1 .JMDasaiBox2Content1{
+  width:38%;height:90px;position:absolute;display:inline-block; margin-left:3%;text-indent:2em;color: #635D4D;
+}
+.JMHome .JMdasaimubiao .JMDasaiBox2 .JMDasaiBox2Div2 .JMDasaiBox2Div2_photo1{
+  width:135px;height:90px;position:relative;display:inline-block;margin-left:25%;margin-top:30px;
+}
+.JMHome .JMdasaimubiao .JMDasaiBox2 .JMDasaiBox2Div2 .JMDasaiBox2Content2{
+  width:38%;height:90px;position:absolute;display:inline-block; margin-left:3%;text-indent:2em;color: #635D4D;
+}
+.JMHome .JMdasaimubiao .JMDasaiBox2 .JMDasaiBox2Div2_photo3{
+  width:350px;height:250px;position:relative;top:-210px;left:-250px;border: 1px solid black;
+}
+
+/* 新闻动态 */
+.JMNewsInformation{
+  width: 100%;height:450px; background-color: #4A4A4A; margin: 40px auto;
+	display: inline-block;
+}
+.JMNewsInformation section{
+  color: #ECC95D; font-size: 24pt; padding-top: 30px; margin-left: 50px;
+	display: inline-block;
+}
+/* 新闻动态 */
+#JMList{
+  height:220px;text-align:center;padding-top:10px;
+	font-size: 0px;
+  padding: 30px;
+}
+#JMList #JMItem{
+  width:40%;margin-left:10px;
+    width: 45%;
+    margin: 2%;
+}
+#JMList #JMItem #JMLink #JMThumb{
+	height: 200px;
+}
+#JMList #JMItem #JMTitle{
+	height: 60px;
+	line-height: 60px;
+    margin: 0 0px 10px 0px;
+    font-size: 20px;
+    color: #6d6d6d;
+		background: #ECC95D;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+#JMList #JMItem #JMDate{
+    color: #fff;
+    font-size: 20px;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		background: #ECC95D;
+}
+#JMTCenter{
+    text-align: center!important;
+}
+#JMBtn{
+	   width: 150px;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    background: #ECC95D;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    border: none;
+}
+/*
+ * footer
+ *
+ * */
+.JMFooter {
+	height: 80px;
+	line-height: 80px;
+	background: #ECC95D;
+	color: #fff;
+	text-align: center;
+}

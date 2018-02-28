@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JMHome</title>
+    <link rel="stylesheet" href="Home.css">
+  </head>
+  <body>
+
+  	<div class="JMHeader">
+        <div class="JMLogo">
+          <a href="#">
+              <img src="../photos/logo.png" alt="">
+          </a>
+        </div>
+        <div class="JMNoticeBoard">
+            <div class="JMNoticeBoardLeft"><a href="#">报名参赛</a></div>
+            <div class="JMNoticeBoardRight">
+               <div class="JMItem">
+                    <span class="countDown">100</span>
+                             征稿截止剩余天数
+               </div>
+            </div>
+        </div>
+        <div class="JMTopNav">
+            <ul class="JMMenu">
+                <li class="JMItem"><a class="JMLink JMActive" href="#">首页</a></li>
+                <li class="JMItem"><a class="JMLink" href="#">新闻</a></li>
+                <li class="JMItem"><a class="JMLink" href="#">章程</a></li>
+                <li class="JMItem"><a class="JMLink" href="#">评委</a></li>
+            </ul>
+            <!--登陆-->
+            <ul class="JMUserMenu" v-cloak>
+                <li class="JMItem" v-show="test"><a class="JMLink JM20C7BE" :to="{ name: 'works'}">[ gansiqiu ]</a></li>
+                <li class="JMItem" v-show="test"><a class="JMLink" :to="{ name: 'logout'}">退出</a></li>
+                <li class="JMItem" v-show="!test"><a class="JMLink JMIconUser" :to="{ name: 'logout'}"></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="JMHome">
+      <div id="JMItem">
+          <img src="../photos/topShow.jpg">
+          <div id="JMInfo">
+              <span id="JMTitle_1">长沙-媒体艺术之都</span><br>
+              <span id="JMTitle_2">视觉形象设计大赛</span>
+          </div>
+          <div class="JMPhotosDiv">
+            <div class="JMMediaPhotos">
+              <ul class="JMMediaPhotosBox1">
+                <li class="JMMediaPhotostitle">
+                  <span style="font-size:28px;color:#4A4A4A;">Changsha</span><br>
+                  <span style="font-size:20px;color:#4A4A4A">Media Arts</span>
+                </li>
+                  <li class="JMMediaPhotos_1">
+                    <img src="../photos/logo0.png">
+                  </li>
+                <li class="JMMediaPhotos_2">
+                  <img src="../photos/logo0.png" alt="">
+              </ul>
+              <ul class="JMMediaPhotosBox2">
+                <li class="JMMediaPhotos_3">
+                  <img src="../photos/logo0.png" alt="">
+                <li class="JMMediaPhotos_4">
+                	<img src="../photos/logo0.png" alt="">
+                <li class="JMMediaPhotos_5">
+                	<img src="../photos/logo0.png" alt="">
+              </ul>
+            </div>
+          </div>
+      </div>
+
+      <!-- 大赛目标 -->
+      <div class="JMdasaimubiao">
+        <!-- 灰色背景 -->
+        <div class="JMgrayBG"></div>
+        <!-- 大赛目标 -->
+        <div class="JMDasaiBox1">
+            <h1 class="JMTitle">大赛目标</h1>
+            <p class="JMDasaiBox1Content1">集思广益，借助群众智慧搜集、整理、发掘反映长沙城市文化的媒体元素和艺术表现形式，为长沙城市文化积累IP资产；</p>
+            <p class="JMDasaiBox1Content2">以大赛为契机，通过线上、线下各类媒体渠道的宣传推广，提升公众对长沙城市文化与湖湘历史文化的关注度，扩大长沙“媒体艺术之都”这张城市名片的影响力；</p>
+            <p class="JMDasaiBox1Content3">利用大赛发掘优秀的媒体艺术人才和设计团队，为长沙“媒体艺术之都”视觉形象后续的落地工作及实施推广储备人才队伍。</p>
+        </div>
+        <!-- 蓝色框 -->
+        <div class="JMDasaiPhoto1">
+        </div>
+
+        <div class="JMDasaiBox2">
+          <div class="JMDasaiBox2Div1">
+            <img class="JMDasaiBox2Div1_photo1" src="../photos/logo0.png">
+            <p class="JMDasaiBox2Content1">2017年11月1日，长沙正式加入联合国教科文组织“创意城市网络”，成为我国首座获评世界“媒体艺术之都”称号的城市。“创意城市网络”致力于发挥全球创意产业对城市可持续发展的推动作用，分为媒体艺术、音乐、文学、美食、电影、设计、手工艺与民间艺术7个类别。</p>
+          </div>
+          <div class="JMDasaiBox2Div2">
+            <img class="JMDasaiBox2Div2_photo1" src="../photos/logo0.png">
+            <p class="JMDasaiBox2Content2">中国联合国教科文组织全国委员会秘书长杜越评价说：“长沙作为丝绸之路上的节点城市，拥有生动丰富的文化遗产和创新创意，发展文化创意将大有可为”。入选“创意城市网络”，获评“媒体艺术之都”，意味着长沙在自主创新、文化创意、传媒艺术等方面的努力，得到了国际社会和文化创意节的高度评价与认可。未来，长沙将进一步做优文创平台，做大文化产业，形成知名文化品牌，加快建设具有国际品质和湖湘文化特色的历史文化名城，将“媒体艺术之都”这张金色名片打造得更加绚丽。</p>
+          </div>
+          <img class="JMDasaiBox2Div2_photo3" src="../photos/logo0.png"alt="">
+        </div>
+      </div>
+
+      <img src="../photos/RaceProcess.png"/>
+      <img src="../photos/reward.png"/>
+
+
+      <!-- 新闻动态 -->
+      <div class="JMNewsInformation">
+        <section>NEWS | 新闻动态</section>
+        <div class="">
+          <ul id="JMList">
+            <li id="JMItem">
+              <a id="JMLink" href="#">
+                  <img id="JMThumb" src="../photos/logo0.png">
+                  <h3 id="JMTitle">湖南省老年服务产品设计大赛</h3>
+                  <span id="JMDate">2019-09-09</span>
+              </a>
+  	        </li>
+  	        <li id="JMItem">
+              <a id="JMLink" href="#">
+                  <img id="JMThumb" src="../photos/logo0.png">
+                  <h3 id="JMTitle">湖南省老年服务产品设计大赛</h3>
+                  <span id="JMDate">2019-09-09</span>
+              </a>
+  	        </li>
+          </ul>
+        </div>
+  		</div>
+  		<div id="JMTCenter">
+          <a id="JMBtn" style="margin: 20px auto;" :to="{ name: 'news'}">查看更多 >></a>
+      </div>
+    </div>
+    <img src="../photos/RaceProcess.png"/>
+
+    <div class="JMFooter">&copy;长沙-媒体艺术之都视觉形象设计大赛</div>
+
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="Home.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

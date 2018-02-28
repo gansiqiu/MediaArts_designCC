@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="Production.css"/>
+		<link rel="stylesheet" type="text/css" href="../swiper-4.1.6.min.css"/>
+	</head>
+	<body>
+
+		<div class="JMHeader">
+			<div class="JMLogo">
+				<a :to="{ name: 'home'}">
+					<img src="../photos/logo.png" alt="">
+				</a>
+			</div>
+			<div class="JMNoticeBoard">
+				<div class="JMNoticeBoardLeft">
+					<a href="#">报名参赛</a>
+				</div>
+				<div class="JMNoticeBoardRight">
+					<div class="JMItem">
+						<span class="countDown">100</span> 征稿截止剩余天数
+					</div>
+				</div>
+			</div>
+			<div class="JMTopNav">
+				<ul class="JMMenu">
+					<li class="JMItem">
+						<a class="JMLink" href="#">首页</a>
+					</li>
+					<li class="JMItem">
+						<a class="JMLink" href="#">新闻</a>
+					</li>
+					<li class="JMItem">
+						<a class="JMLink" href="#">章程</a>
+					</li>
+					<li class="JMItem">
+						<a class="JMLink JMActive" href="#">评委</a>
+					</li>
+				</ul>
+				<!--登陆-->
+				<ul class="JMUserMenu" v-cloak>
+					<li class="JMItem" v-show="test">
+						<a class="JMLink JM20C7BE" :to="{ name: 'works'}">[ gansiqiu ]</a>
+					</li>
+					<li class="JMItem" v-show="test">
+						<a class="JMLink" :to="{ name: 'logout'}">退出</a>
+					</li>
+					<li class="JMItem" v-show="!test">
+						<a class="JMLink JMIconUser" :to="{ name: 'logout'}"></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 轮播器 -->
+		<div class="JMProduction">
+	    	<div class="swiper-container" style="max-width:1280px;height:400px;background:gray;margin:40px auto">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide">Slide 1</div>
+			        <div class="swiper-slide">Slide 2</div>
+			        <div class="swiper-slide">Slide 3</div>
+			    </div>
+			    <!-- 如果需要分页器 -->
+			    <div class="swiper-pagination"></div>
+
+			    <!-- 如果需要导航按钮 -->
+			    <div class="swiper-button-prev"></div>
+			    <div class="swiper-button-next"></div>
+
+			    <!-- 如果需要滚动条 -->
+			    <div class="swiper-scrollbar"></div>
+		    </div>
+				<!-- 最近上传 最多关注	最多点赞-->
+		    <div class="JMProducBtnDiv">
+		      <ul class="JMProducBtnUl">
+		        <li class="JMProducBtn1">
+		          <a><img src="../photos/iconUser.png">最近上传</a>
+		        </li>
+		        <li class="JMProducBtn2">
+		          <a><img src="../photos/iconUser.png">最多关注</a>
+		        </li>
+		        <li  class="JMProducBtn3">
+		          <a><img src="../photos/iconUser.png">最多点赞</a>
+		        </li>
+		      </ul>
+		    </div>
+
+				<!-- 作品列表 -->
+		    <div class="JMProducListDiv">
+		      <ul class="JMProducListUl_1">
+		        <li class="JMProducListUl1_1">
+		          <div>
+		            <img src="../photos/production.jpg" alt="">
+		            <h3 class="JMProducListUl1li1_title">作品名称：媒体之都</h3>
+		            <h3 class="JMProducListUl1li1_author">作者：媒体之都</h3>
+		          </div>
+		        </li>
+		        <li  class="JMProducListUl1_2">
+		          <div>
+		            <img src="../photos/production.jpg" alt="">
+		            <h3 class="JMProducListUl1li1_title">作品名称：媒体之都</h3>
+		            <h3 class="JMProducListUl1li1_author">作者：媒体之都</h3>
+		          </div>
+		        </li>
+		        <li  class="JMProducListUl1_3">
+		          <div>
+		            <img src="../photos/production.jpg" alt="">
+		            <h3 class="JMProducListUl1li1_title">作品名称：媒体之都</h3>
+		            <h3 class="JMProducListUl1li1_author">作者：媒体之都</h3>
+		          </div>
+		        </li>
+		        <li  class="JMProducListUl1_4">
+		          <div>
+		            <img src="../photos/production.jpg" alt="">
+		            <h3 class="JMProducListUl1li1_title">作品名称：媒体之都</h3>
+		            <h3 class="JMProducListUl1li1_author">作者：媒体之都</h3>
+		          </div>
+		        </li>
+		      </ul>
+		    </div>
+		</div>
+
+		<div id="JMFooter">&copy;康乃馨养老产业集团</div>
+
+		<script src="../swiper-4.1.6.min.js" type="text/javascript" charset="utf-8"></script>
+
+
+
+		<script type="text/javascript">
+			window.onload = function() {
+				var mySwiper = new Swiper ('.swiper-container', {
+			    direction: 'vertical',
+			    loop: true,
+
+			    // 如果需要分页器
+			    pagination: {
+			      el: '.swiper-pagination',
+			    },
+
+			    // 如果需要前进后退按钮
+			    navigation: {
+			      nextEl: '.swiper-button-next',
+			      prevEl: '.swiper-button-prev',
+			    },
+
+			    // 如果需要滚动条
+			    scrollbar: {
+			      el: '.swiper-scrollbar',
+			    },
+			  })
+			}
+		</script>
+	</body>
+</html>

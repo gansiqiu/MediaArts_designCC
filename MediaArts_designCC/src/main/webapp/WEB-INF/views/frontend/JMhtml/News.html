@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="News.css">
+  </head>
+  <body>
+    <div class="JMHeader">
+			<div class="JMLogo">
+				<a :to="{ name: 'home'}">
+					<img src="../photos/logo.png" alt="">
+				</a>
+			</div>
+			<div class="JMNoticeBoard">
+				<div class="JMNoticeBoardLeft">
+					<a href="#">报名参赛</a>
+				</div>
+				<div class="JMNoticeBoardRight">
+					<div class="JMItem">
+						<span class="countDown">100</span> 征稿截止剩余天数
+					</div>
+				</div>
+			</div>
+			<div class="JMTopNav">
+				<ul class="JMMenu">
+					<li class="JMItem">
+						<a class="JMLink" href="#">首页</a>
+					</li>
+					<li class="JMItem">
+						<a class="JMLink" href="#">新闻</a>
+					</li>
+					<li class="JMItem">
+						<a class="JMLink" href="#">章程</a>
+					</li>
+					<li class="JMItem">
+						<a class="JMLink JMActive" href="#">评委</a>
+					</li>
+				</ul>
+				<!--登陆-->
+				<ul class="JMUserMenu" v-cloak>
+					<li class="JMItem" v-show="test">
+						<a class="JMLink JM20C7BE" :to="{ name: 'works'}">[ gansiqiu ]</a>
+					</li>
+					<li class="JMItem" v-show="test">
+						<a class="JMLink" :to="{ name: 'logout'}">退出</a>
+					</li>
+					<li class="JMItem" v-show="!test">
+						<a class="JMLink JMIconUser" :to="{ name: 'logout'}"></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+
+    <!-- 新闻列表 -->
+    <div class="JMNewsList">
+      <ul class="JMNewsListUl">
+        <li class="JMNews1">
+            <img src="../photos/logo.png" alt="">
+            <div class="JMNewsTextBox">
+              <span class="JMNewsText_date">2018.2.27</span>
+              <span  class="JMNewsText_title">2015年1月22日 - 在编辑器上打开的文件可以分离到不同的面板上显示</span>
+              <span  class="JMNewsText_content">2015年1月22日 - 在编辑器上打开的文件可以分离到不同的面板上显示,2015年1月22日 - 在编辑器上打开的文件可以分离到不同的面板上显示2015年1月22日 - 在编辑器上打开的文件可以分离到不同的面板上显示</span>
+            </div>
+            <hr>
+        </li>
+          <li class="JMNews1">
+              <img src="../photos/logo.png" alt="">
+              <div class="JMNewsTextBox">
+                <span class="JMNewsText_date">2018.2.27</span>
+                <span  class="JMNewsText_title">2015年1月22日 - 在编辑器上打开的文件可以分离到不同的面板上显示</span>
+                <span  class="JMNewsText_content">2015年1月22日 - 在编辑器上打开的文件可以分离到不同的面板上显示,2015年1月22日 - 在编辑器上打开的文件可以分离到不同的面板上显示2015年1月22日 - 在编辑器上打开的文件可以分离到不同的面板上显示</span>
+              </div>
+              <hr>
+          </li>
+            <li class="JMNews1">
+                <img src="../photos/logo.png" alt="">
+                <div class="JMNewsTextBox">
+                  <span class="JMNewsText_date">2018.2.27</span>
+                  <span  class="JMNewsText_title">2015年1月22日 - 在编辑器上打开的文件可以分离到不同的面板上显示</span>
+                  <span  class="JMNewsText_content">2015年1月22日 - 在编辑器上打开的文件可以分离到不同的面板上显示,2015年1月22日 - 在编辑器上打开的文件可以分离到不同的面板上显示2015年1月22日 - 在编辑器上打开的文件可以分离到不同的面板上显示</span>
+                </div>
+                <hr>
+            </li>
+              <li class="JMNews1">
+                  <img src="../photos/logo.png" alt="">
+                  <div class="JMNewsTextBox">
+                    <span class="JMNewsText_date">2018.2.27</span>
+                    <span  class="JMNewsText_title">2015年1月22日 - 在编辑器上打开的文件可以分离到不同的面板上显示</span>
+                    <span  class="JMNewsText_content">2015年1月22日 - 在编辑器上打开的文件可以分离到不同的面板上显示,2015年1月22日 - 在编辑器上打开的文件可以分离到不同的面板上显示2015年1月22日 - 在编辑器上打开的文件可以分离到不同的面板上显示</span>
+                  </div>
+                  <hr>
+              </li>
+      </ul>
+    </div>
+  </body>
+</html>
